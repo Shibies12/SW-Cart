@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SW Cart</title>
+    <link rel="stylesheet" href="Sign_in.css" />
+  </head>
+  <body>
+    <h2 class="lg">Login</h2>
+    <h3 class="acc">Have an account</h3>
+    <form class="signin-form" onsubmit="loginform()">
+      <div class="form-group1">
+        <input type="text" class="user" placeholder="Username" id="user1" />
+      </div>
+      <div class="form-group2">
+        <input type="password" class="pass" placeholder="Password" id="pass1" />
+      </div>
+      <div class="form-group3">
+        <input
+          type="submit"
+          value="SIGN IN"
+          class="but"
+          onclick="loginform()"
+        />
+      </div>
+      <div class="form-group4">
+        <input type="checkbox" class="frm" checked />
+        <label class="rem">Remember Me</label>
+        <label class="pass2">Forgot Password</label>
+      </div>
+    </form>
+    <div class="link">
+      <a href="https://www.facebook.com/login/" target="_blank"
+        ><button class="face">Facebook</button></a
+      >
+      <a href="https://www.instagram.com/" target="_blank"
+        ><button class="ins">Instagram</button></a
+      >
+    </div>
+    <script type="text/javascript" src="Sign_in.js"></script>
+  </body>
+</html>

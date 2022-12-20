@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Products Page</title>
+    <link rel="stylesheet" href="produts.css" />
+  </head>
+  <body>
+    <div class="container">
+      <!-- header starts -->
+      <h1>SW Cart</h1>
+      <!-- header ends -->
+      <!-- navigation bar  -->
+      <div class="topnav">
+        <a href="http://127.0.0.1:5500/Sign%20page/products.html">Home</a>
+        <a href="http://127.0.0.1:5500/Sign%20page/Sign_in.html">Login</a>
+      </div>
+      <!-- navigation bar ends  -->
+      <!-- products starts -->
+      <div id="alerts"></div>
+      <div class="productcont">
+        <div class="product">
+          <h3 class="productname">Apple Watch Series 8</h3>
+          <h4>Starlight</h4>
+          <img
+            src="/products/apple_series8.jpg"
+            alt="watch"
+            width="200"
+            height="200"
+          />
+          <p class="price">$545.41</p>
+          <button class="addtocart">Add To Cart</button>
+        </div>
+        <div class="product">
+          <h3 class="productname">Galaxy Watch 5 LTE</h3>
+          <h4>Purple</h4>
+          <img
+            src="/products/galaxy-watch5-lite.jpg"
+            alt="watch"
+            width="200"
+            height="200"
+          />
+          <p class="price">$400.13</p>
+          <button class="addtocart">Add To Cart</button>
+        </div>
+        <div class="product">
+          <h3 class="productname">Google Pixel Watch</h3>
+          <h4>Black</h4>
+          <img
+            src="/products/google_pixel_watch.jpg"
+            alt="watch"
+            width="200"
+            height="200"
+          />
+          <p class="price">$803.37</p>
+          <button class="addtocart">Add To Cart</button>
+        </div>
+      </div>
+      <!-- products ends -->
+      <!-- add to cart starts -->
+      <div class="cart-container">
+        <h2 class="txt">Cart</h2>
+        <table>
+          <thead>
+            <tr>
+              <th><strong>Product</strong></th>
+              <th><strong>Price</strong></th>
+            </tr>
+          </thead>
+          <tbody id="carttable"></tbody>
+        </table>
+        <hr />
+        <table id="carttotals">
+          <tr>
+            <td><strong>Items</strong></td>
+            <td><strong>Total</strong></td>
+          </tr>
+          <tr>
+            <td>x <span id="itemsquantity">0</span></td>
+
+            <td>$<span id="total">0</span></td>
+          </tr>
+        </table>
+
+        <div class="cart-buttons">
+          <button id="emptycart">Empty Cart</button>
+          <button id="checkout">Checkout</button>
+        </div>
+      </div>
+    </div>
+    <!-- add to cart ends-->
+    <script type="text/javascript" src="products.js"></script>
+  </body>
+</html>
